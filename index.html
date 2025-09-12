@@ -1,33 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+   
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Jana Sandeyouni Portfolio</title>
+
+    <link rel="stylesheet" href="styles/style.css" />
+    <style>
+        .home {
+            background-image: url(my_photo.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 40rem;
+        }
+    </style>
     <script src="scripts/script.js"></script>
+
 </head>
+
 <body>
 
-    <h1>Jana Sandeyouni Portolio!</h1>
-    <h2>My skills</h2>
-    <h3>Front-end</h3>
-    <ol>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>React native</li>
-        <li>React js</li>
-        <li>Android Studio</li>
-    </ol>
-    <h3>Back-end</h3>
-    <ol>
-        <li>Java</li>
-        <li>Python</li>
-        <li>JavaScript</li>
-    </ol>
-     <h3>Ui&Ux</h3>
-      <ol>
-        <li>figma</li>
-    </ol>
+    <!-- Home Section -->
+
+    <div class="home">
+        
+        <h1>Im<span id="space"> </span><span>Jana,</span></h1>
+        <h1>Software Engineer</h1>
+    </div>
     
+    <div class="home-line"></div>
+
+    <!-- About Me section -->
+    <div class="about-me">
+        <img src="coding_girl_pic.jpg" alt="pic" />
+        <div class="about-me-text">
+            <h1><span class="span-about-me">-</span>About Me</h1>
+            <h1>Who is<span class="span-about-me"> Jana Sandeyouni?</span></h1>
+            <p>I’m Jana! a fresh graduate Bachelor's degree in Software Engineering with a Diploma in Entrepreneurship,
+                combining strong academic achievements with hands-on experience in research, volunteering, and creative
+                development work.
+                I’m a fast learner who adapts quickly to new challenges and technologies. I’m passionate about building
+                innovative and user-focused websites and mobile applications that solve real-world problems and deliver
+                value.
+                With solid programming skills, strong communication, creativity, and flexibility, I enjoy collaborating
+                on
+                impactful projects. I also have experience using Microsoft tools and have designed and developed my own
+                personal portfolio website.</p>
+
+            <section class="about-me-info">
+                <h3>7+</h3>
+                <h3>17+</h3>
+            </section>
+
+            <section class="about-me-info">
+                <p>Projects Completed</p>
+                <p>Certifications</p>
+            </section>
+
+            <!-- From Uiverse.io by cssbuttons-io -->
+            <button class="cv-btn">
+                <span class="circle" aria-hidden="true">
+                    <span class="icon arrow"></span>
+                </span>
+              <a class="button-text" href="Jana Sandeyouni - CV.pdf">View my CV</a> 
+                
+            </button>
+
+        </div>
+    </div>
+    <div class="about-me-line"></div>
 </body>
+
 </html>
