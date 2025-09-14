@@ -1,167 +1,794 @@
-   /*body background From Uiverse.io by kennyotsu-monochromia  */
-body {
-  background-color: #ffff;
+   /*body background From Uiverse.io by jeremyssocial  */
+   body {
+       background-color: #ffffff;
+       font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+       /* width: 100%;
+       height: 100%;
+       justify-content: center;
+       align-items: center;
+       background: #d2a9f9;
+       background: linear-gradient(135deg,
+               #ffff 25%,
+               #d2a9f9 25%,
+               #d2a9f9 50%,
+               #ffff 50%,
+               #ffff 75%,
+               #d2a9f9 75%,
+               #d2a9f9);
+       background-size: 40px 40px;
+       animation: move 4s linear infinite; */
+   }
+
+   /* 
+   @keyframes move {
+       0% {
+           background-position: 0 0;
+       }
+
+       100% {
+           background-position: 40px 40px;
+       }
+   } */
+
+   /* Home Section */
+   .home {
+       padding-top: 200px;
+       padding-bottom: 30px;
+       font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+   }
+
+   /* From Uiverse.io by gohar_7145 */
+   .outline {
+       position: absolute;
+       inset: 0;
+       pointer-events: none;
+       
+   }
+
+   .rect {
+       stroke-dashoffset: 5;
+       stroke-dasharray: 0 0 10 40 10 40;
+       transition: 0.5s;
+       stroke: #d2a9f9;
+    
+       
+   }
+
+   .nav {
+       margin-top: 80px;
+       font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+       position: relative;
+       margin-left: 1330px;
+       align-self: center;
+       width: 300px;
+       height: 60px;
+       border-radius: 40px;
+        
+
+   }
+
+   .nav a{
+    text-decoration: none;
+   }
+
+   .container:hover .outline .rect {
+       transition: 999999s;
+       /* Must specify these values here as something *different* just so that the transition works properly */
+       stroke-dashoffset: 1;
+       stroke-dasharray: 0;
+       
+   }
+
+   .container {
+       position: absolute;
+       inset: 0;
+       display: flex;
+       flex-direction: row;
+       justify-content: space-around;
+       align-items: center;
+       padding: 0.5em;
+     
+      
+   }
+
+   .btn {
+       padding: 0.5em 1.5em;
+       color: #3e3e3e;
+       cursor: pointer;
+       transition: 0.1s;
+       text-decoration: none;
+   }
+
+   .btn:hover {
+       background: #d2a9f9;
+       border-radius: 10px;
+        text-decoration: none;
+   }
+
+   .btn:nth-child(1):hover~svg .rect {
+       stroke-dashoffset: 0;
+       stroke-dasharray: 0 2 8 73.3 8 10.7;
+   }
+
+   .btn:nth-child(2):hover~svg .rect {
+       stroke-dashoffset: 0;
+       stroke-dasharray: 0 12.6 9.5 49.3 9.5 31.6;
+   }
+
+   .btn:nth-child(3):hover~svg .rect {
+       stroke-dashoffset: 0;
+       stroke-dasharray: 0 24.5 8.5 27.5 8.5 55.5;
+   }
+
+   .btn:nth-child(4):hover~svg .rect {
+       stroke-dashoffset: 0;
+       stroke-dasharray: 0 34.7 6.9 10.2 6.9 76;
+   }
+
+   .btn:hover~.outline .rect {
+       stroke-dashoffset: 0;
+       stroke-dasharray: 0 0 10 40 10 40;
+       transition: 0.5s !important;
+   }
+
+
+   .home span {
+
+       color: #d2a9f9;
+       letter-spacing: 250px;
+
+   }
+
+   .home h1 {
+       /* color: rgb(192, 198, 198);  */
+       /* color: rgb(71, 71, 71);  */
+       color: #3e3e3e;
+       text-align: center;
+       font-size: 9rem;
+   }
+
+   .home-line {
+       padding-top: 40px;
+       background-color: #d2a9f9;
+
+   }
+
+   /* About Me Section */
+
+   .about-me {
+       padding-top: 200px;
+       padding-bottom: 100px;
+       display: flex;
+   }
+
+.myname{
+    font-size: 100px;
 }
 
-/* Home Section */
-.home {
-    padding-top: 200px;
-    padding-bottom: 30px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   .about-me img {
+       padding-left: 300px;
+       border-radius: 50%;
+   }
 
-}
+   .about-me-text {
+       padding-left: 60px;
+       font-size: 20px;
+       font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+       padding-right: 300px;
+       color: #3e3e3e;
+   }
 
+   .span-about-me {
+       color: #d2a9f9;
+       font-size: 10rem;
+       font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
-.home span {
-    color: #d2a9f9;
-    letter-spacing: 250px;
-}
+   }
 
-.home h1 {
-    /* color: rgb(192, 198, 198);  */
-    /* color: rgb(71, 71, 71);  */
-    color: #3e3e3e;
-    text-align: center;
-    font-size: 8rem;
-}
-
-.home-line {
-    padding-top: 40px;
-    background-color: #d2a9f9;
-}
-
-/* About Me Section */
-
-.about-me {
-    padding-top: 200px;
-    padding-bottom: 100px;
-    display: flex;
-
-}
-
-.about-me img {
-    padding-left: 300px;
-}
-
-.about-me-text {
-    padding-left: 60px;
-    font-size: 20px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    padding-right: 300px;
-    color: #3e3e3e;
-}
-
-.span-about-me {
+   .span-about-me-{
     color: #d2a9f9;
     font-size: 6rem;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   }
 
-}
+   .about-me-info {
+       display: flex;
+       justify-content: space-around;
+       font-size: 50px;
+       padding-bottom: 1px;
 
-.about-me-info {
-    display: flex;
-    justify-content: space-around;
-    font-size: 50px;
-    padding-bottom: 1px;
-
-}
+   }
 
 
-/* button From Uiverse.io by cssbuttons-io */
-button {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-    outline: none;
-    border: 0;
-    vertical-align: middle;
-    text-decoration: none;
-    background: transparent;
-    padding: 0;
-    font-size: inherit;
-    font-family: inherit;
-}
+   /* button From Uiverse.io by cssbuttons-io */
+   button {
+       position: relative;
+       display: inline-block;
+       cursor: pointer;
+       outline: none;
+       border: 0;
+       vertical-align: middle;
+       text-decoration: none;
+       background: transparent;
+       padding: 0;
+       font-size: inherit;
+       font-family: inherit;
+   }
 
-button.cv-btn {
-    width: 15rem;
-    height: auto;
-}
+   button.cv-btn {
+       width: 15rem;
+       height: auto;
+   }
 
-button.cv-btn .circle {
-    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-    position: relative;
-    display: block;
-    margin: 0;
-    width: 3rem;
-    height: 3.5rem;
-    background: #282936;
-    border-radius: 1.625rem;
-}
+   button.cv-btn .circle {
+       transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+       position: relative;
+       display: block;
+       margin: 0;
+       width: 3rem;
+       height: 3.5rem;
+       background: #282936;
+       border-radius: 1.625rem;
+   }
 
-button.cv-btn .circle .icon {
-    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    background: #fff;
-}
+   button.cv-btn .circle .icon {
+       transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+       position: absolute;
+       top: 0;
+       bottom: 0;
+       margin: auto;
+       background: #fff;
+   }
 
-button.cv-btn .circle .icon.arrow {
-    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-    left: 0.625rem;
-    width: 1.125rem;
-    height: 0.125rem;
-    background: none;
-}
+   button.cv-btn .circle .icon.arrow {
+       transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+       left: 0.625rem;
+       width: 1.125rem;
+       height: 0.125rem;
+       background: none;
+   }
 
-button.cv-btn .circle .icon.arrow::before {
-    position: absolute;
-    content: "";
-    top: -0.29rem;
-    right: 0.0625rem;
-    width: 0.625rem;
-    height: 0.625rem;
-    border-top: 0.125rem solid #fff;
-    border-right: 0.125rem solid #fff;
-    transform: rotate(45deg);
-}
+   button.cv-btn .circle .icon.arrow::before {
+       position: absolute;
+       content: "";
+       top: -0.29rem;
+       right: 0.0625rem;
+       width: 0.625rem;
+       height: 0.625rem;
+       border-top: 0.125rem solid #fff;
+       border-right: 0.125rem solid #fff;
+       transform: rotate(45deg);
+   }
 
-button.cv-btn .button-text {
-    text-decoration: none;
-    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    padding: 0.75rem 0;
-    margin: 0 0 0 2rem;
-    color: #282936;
-    font-weight: 700;
-    line-height: 1.6;
-    text-align: center;
-    text-transform: uppercase;
-    padding-left: 11px;
-}
+   button.cv-btn .button-text {
+       text-decoration: none;
+       transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+       position: absolute;
+       top: 0;
+       left: 0;
+       right: 0;
+       bottom: 0;
+       padding: 0.75rem 0;
+       margin: 0 0 0 2rem;
+       color: #282936;
+       font-weight: 700;
+       line-height: 1.6;
+       text-align: center;
+       text-transform: uppercase;
+       padding-left: 11px;
+   }
 
-button:hover .circle {
-    width: 100%;
-}
+   button:hover .circle {
+       width: 100%;
+   }
 
-button:hover .circle .icon.arrow {
-    background: #fff;
-    transform: translate(1rem, 0);
-}
+   button:hover .circle .icon.arrow {
+       background: #fff;
+       transform: translate(1rem, 0);
+   }
 
-button:hover .button-text {
-    color: #fff;
-    padding-left: 10px;
-}
+   button:hover .button-text {
+       color: #fff;
+       padding-left: 10px;
+   }
 
 
 
-.about-me-line {
-    padding-top: 40px;
-    background-color: #d2a9f9;
-}
+   .about-me-line {
+       padding-top: 40px;
+       background-color: #d2a9f9;
+       
+   }
+
+   /* Skills Section */
+
+   .skills {
+       padding-top: 300px;
+       padding-bottom: 200px;
+       font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+       color: #3e3e3e;
+   }
+
+   .skills h1 {
+       font-size: 50px;
+       text-align: center;
+   }
+
+   .skills span {
+       color: #d2a9f9;
+       font-size: 6rem;
+       font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   }
+
+   .skills-box img {
+       border-radius: 20%;
+       height: 15rem;
+       position: relative;
+       animation-name: moving;
+       animation-duration: 10s;
+       animation-iteration-count: infinite;
+       padding-bottom: 20px;
+   }
+
+   @keyframes moving {
+       0% {
+           left: 0;
+           transform: rotateZ(0deg);
+       }
+
+       50% {
+
+           /* left: calc(100% - 100px); */
+           transform: rotateZ(360deg);
+       }
+
+       100% {
+           left: 0;
+           transform: rotateZ(0deg);
+       }
+   }
+
+
+   .skills-line {
+       padding-top: 40px;
+       background-color: #d2a9f9;
+   }
+
+   /* projects section */
+   .projects {
+       padding-top: 300px;
+       padding-bottom: 300px;
+       display: flex;
+       font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   }
+
+   .projects h1 {
+       font-size: 20rem;
+       position: absolute;
+       color: #3e3e3e;
+       opacity: 40%;
+       margin-top: 760px;
+   }
+
+   /* From Uiverse.io by ProgramaConPid */
+   /* Card Styles */
+   .card {
+       width: 400px;
+       height: 600px;
+       padding: 100px;
+       border-radius: 200px;
+       display: flex;
+       margin-left: 140px;
+       flex-direction: column;
+       align-items: center;
+       position: relative;
+       background-color: rgba(113, 113, 113, 0.6);
+       text-align: center;
+       border: 1px solid #fff;
+       /* Transform Propertys */
+       --rotate-animation: rotate(45deg);
+       --scale-animation: scale(0);
+       /* Backgrounds - Social Media Hover */
+       --bg-facebook: blue;
+       --bg-instagram: linear-gradient(to right, #8a2387, #e94057, #f27121);
+       --bg-twitter: rgb(25, 173, 206);
+       --bg-linkedin: rgb(30, 48, 131);
+      
+
+
+   }
+
+   .first-card {
+       width: 400px;
+       height: 600px;
+       padding: 100px;
+       border-radius: 200px;
+       display: flex;
+       margin-left: 100px;
+       flex-direction: column;
+       align-items: center;
+       position: relative;
+       background-color: rgba(113, 113, 113, 0.6);
+       text-align: center;
+       border: 1px solid #fff;
+       /* Transform Propertys */
+       --rotate-animation: rotate(45deg);
+       --scale-animation: scale(0);
+       /* Backgrounds - Social Media Hover */
+
+
+   }
+
+   .first-card::before {
+       content: '';
+       height: 110%;
+       width: 110%;
+       position: absolute;
+       border-radius: 200px;
+       top: -5%;
+       left: -5%;
+       z-index: -1;
+       background: linear-gradient(to right,
+               #d2a9f9,
+               #302b63,
+               #24243e);
+       filter: blur(30px);
+
+   }
+
+
+   .card__figure img {
+       width: 550px;
+       height: 300px;
+   }
+
+   .card::before {
+       content: '';
+       height: 110%;
+       width: 110%;
+       position: absolute;
+       border-radius: 200px;
+       top: -5%;
+       left: -5%;
+       z-index: -1;
+       background: linear-gradient(to right,
+               #d2a9f9,
+               #e5e4ec,
+               #a8a8b3);
+       filter: blur(30px);
+      
+   }
+
+   .card__hover {
+       color: #fff;
+       width: 100%;
+       margin: 0;
+       font-size: 40px;
+       font-weight: 600;
+       position: absolute;
+       top: 50%;
+       left: 0;
+       text-align: center;
+       letter-spacing: 2px;
+       pointer-events: none;
+       transform: scale(1) translateY(-50%);
+       font-family: var(--font-mulish);
+       transition: transform 500ms;
+
+
+   }
+
+   .card:hover .card__hover {
+       transform: scale(0);
+   }
+
+   .card__figure {
+       width: 140%;
+       height: 100%;
+       border-radius: 50px;
+       overflow: hidden;
+       transform: var(--rotate-animation) var(--scale-animation);
+       transition: transform 600ms ease 100ms;
+   }
+
+   .card:hover .card__figure {
+       --rotate-animation: rotate(0);
+       --scale-animation: scale(1);
+   }
+
+   .card__figure svg {
+       height: 100%;
+       width: 100%;
+       object-fit: cover;
+       filter: drop-shadow(0 0 2px #0f0c29);
+   }
+
+   .card__info {
+       display: flex;
+       flex-direction: column;
+       transform: var(--scale-animation);
+       transition: transform 600ms ease 100ms;
+   }
+
+   .card:hover .card__info {
+       --scale-animation: scale(1);
+   }
+
+   .card__name {
+       
+       font-size: 28px;
+       letter-spacing: 1px;
+       font-family: var(--font-AR-One-Sans);
+   }
+
+   .card__ocupation {
+       color: aliceblue;
+       font-family: var(--font-mulish);
+       text-transform: uppercase;
+       font-size: 18px;
+       letter-spacing: 2px;
+   }
+
+
+  
+   .projects-line {
+       padding-top: 40px;
+       background-color: #d2a9f9;
+   }
+
+   /* Contact me section */
+
+   .contact-me {
+       display: flex;
+       font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   }
+
+   .contact-me-header {
+       padding-top: 300px;
+       color: #3e3e3e;
+       font-size: 50px;
+       text-align: center;
+       font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   }
+
+
+   .contact-me-span {
+       color: #d2a9f9;
+       font-size: 6rem;
+       font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   }
+
+   /* From Uiverse.io by ClawHack1 */
+   .contact-form {
+       background-color: #f2f2f2;
+       padding: 20px;
+       border-radius: 90px;
+       margin-left: 40rem;
+       height: 600px;
+       margin-right: 10rem;
+       margin-top: 200px;
+       padding: 100px;
+   }
+
+   .contact-form label {
+       color: black;
+       font-size: 30px;
+
+   }
+
+   .contact-form .heading {
+       font-size: 24px;
+       color: black;
+       ;
+       margin-bottom: 12px;
+       font-weight: bold;
+       display: block;
+       font-size: 60px;
+   }
+
+   .contact-form form {
+       display: flex;
+       flex-direction: column;
+   }
+
+   .contact-form label {
+       margin-bottom: 10px;
+
+   }
+
+
+   textarea {
+       resize: none;
+       height: 150px;
+       width: 500px;
+
+   }
+
+   .contact-form input,
+   .contact-form textarea {
+       padding: 10px;
+       border: none;
+       border-radius: 5px;
+       margin-bottom: 20px;
+   }
+
+   .contact-form input:focus,
+   .contact-form textarea:focus {
+       outline: none;
+       box-shadow: 0 0 5px #d2a9f9;
+       transform: scale(1.05);
+       transition: transform 0.3s ease-in-out;
+   }
+
+   .contact-form button[type="submit"] {
+       background-color: #d2a9f9;
+       color: #fff;
+       border: none;
+       border-radius: 5px;
+       padding: 10px 20px;
+       font-size: 16px;
+       cursor: pointer;
+   }
+
+   .contact-form button[type="submit"]:hover {
+       transform: scale(1.1);
+       transition: transform 0.3s ease-in-out;
+   }
+
+
+   /* From Uiverse.io by deamelo */
+   .main {
+       display: flex;
+       flex-direction: column;
+       gap: 0.5em;
+
+   }
+
+   .up {
+       display: flex;
+       margin-top: 200px;
+       flex-direction: row;
+       gap: 0.5em;
+
+   }
+
+   .down {
+       display: flex;
+       flex-direction: row;
+       gap: 0.5em;
+
+       margin-bottom: 200px;
+   }
+
+   .card1 {
+       width: 400px;
+       height: 400px;
+       outline: none;
+       border: none;
+       background-color: #f2f2f2;
+       border-radius: 90px 5px 5px 5px;
+       box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+           rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+       transition: 0.2s ease-in-out;
+   }
+
+   .whatsapp {
+       margin-top: 1.5em;
+       margin-left: 1.2em;
+       fill: #00ff00;
+       width: 150px;
+       height: 150px;
+   }
+
+   .card2 {
+       width: 400px;
+       height: 400px;
+       outline: none;
+       border: none;
+       background-color: #f2f2f2;
+       border-radius: 5px 90px 5px 5px;
+       box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+           rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+       transition: 0.2s ease-in-out;
+   }
+
+   .linkedin {
+       margin-top: 1.5em;
+       margin-left: -0.9em;
+       fill: #0077b5;
+       width: 150px;
+       height: 150px;
+   }
+
+   .card3 {
+       width: 400px;
+       height: 400px;
+       outline: none;
+       border: none;
+       background-color: #f2f2f2;
+       border-radius: 5px 5px 5px 90px;
+       box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+           rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+       transition: 0.2s ease-in-out;
+   }
+
+   .github {
+       margin-top: -0.6em;
+       margin-left: 1.2em;
+       width: 150px;
+       height: 150px;
+   }
+
+   .card4 {
+       width: 400px;
+       height: 400px;
+       outline: none;
+       border: none;
+       background-color: #f2f2f2;
+       border-radius: 5px 5px 90px 5px;
+       box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+           rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+       transition: 0.2s ease-in-out;
+   }
+
+   .discord {
+       margin-top: -0.9em;
+       margin-left: -1.2em;
+       width: 150px;
+       height: 150px;
+       fill: #8c9eff;
+   }
+
+   .card1:hover {
+       cursor: pointer;
+       scale: 1.1;
+       background-color: #00ff00;
+   }
+
+   .card1:hover .whatsapp {
+       fill: white;
+   }
+
+   .card2:hover {
+       cursor: pointer;
+       scale: 1.1;
+       background-color: #0077b5;
+   }
+
+   .card2:hover .linkedin {
+       fill: white;
+   }
+
+   .card3:hover {
+       cursor: pointer;
+       scale: 1.1;
+       background-color: black;
+   }
+
+   .card3:hover .github {
+       fill: white;
+   }
+
+   .card4:hover {
+       cursor: pointer;
+       scale: 1.1;
+       background-color: #8c9eff;
+   }
+
+   .card4:hover .discord {
+       fill: white;
+   }
+
+
+
+   /* Footer section */
+
+   .footer h1 {
+       padding-top: 80px;
+       background-color: #d2a9f9;
+       color: #3e3e3e;;
+       text-align: center;
+       padding-bottom: 80px;
+       font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   }
+
