@@ -17,16 +17,59 @@
             animation: change-img 10s 4s infinite;
              border-radius: 30%;
         }
-
-        @keyframes change-img{
+         @keyframes change-img{
             0%{background-image: url(./my_pic.jpg);}
             50%{background-image: url(./my_photo.png);}
         }
-         @media (max-width: 768px) {
-            .home{
-                background-position: center;
-            }
-         }
+
+        /* Home Section responsive*/
+@media screen and (max-width: 768px) {
+    .home {
+        padding-top: 200px;
+        padding-bottom: 30px;
+        background-image: url(./my_pic.jpg);
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: 20rem;
+        animation: change-img 10s 4s infinite;
+        border-radius: 30%;
+        text-align: center;
+    }
+
+    @keyframes change-img {
+        0% {
+            background-image: url(./my_pic.jpg);
+        }
+        50% {
+            background-image: url(./my_photo.png);
+        }
+    }
+
+    .home h1 {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .home span {
+        letter-spacing: 20px;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .home {
+        background-size: 15rem;
+        background-position: center top;
+    }
+
+    .home h1 {
+        font-size: 2.2rem;
+    }
+
+    .home span {
+        letter-spacing: 10px;
+    }
+}
     </style>
     <script src="scripts/script.js"></script>
 
@@ -65,16 +108,15 @@
         <h1>I'm<span id="space"> </span><span>Jana</span></h1>
         <h1>Software Engineer</h1>
     </div>
-<!-- 
-    <div class="home-line"></div> -->
+
 
     <!-- About Me section -->
     <div id="about-me" class="about-me">
         <img src="./code-pic.jpg" alt="pic" />
         <div class="about-me-text">
-            <h1><span class="span-about-me-">-</span> About Me</h1>
+            <h1 class="span-about-me-text"><span class="span-about-me-">-</span> About Me </h1>
             <h1 class="myname">Who is<span class="span-about-me"> Jana Sandeyouni?</span></h1>
-            <h3>I’m Jana! a fresh graduate Bachelor's degree in Software Engineering with a Diploma in Entrepreneurship,
+            <h2>I’m Jana! a fresh graduate Bachelor's degree in Software Engineering with a Diploma in Entrepreneurship,
                 combining strong academic achievements with hands-on experience in research, volunteering, and creative
                 development work.
                 I’m a fast learner who adapts quickly to new challenges and technologies. I’m passionate about building
@@ -82,7 +124,7 @@
                 value.
                 With solid programming skills, strong communication, creativity, and flexibility, I enjoy collaborating
                 on
-                impactful projects.</h3>
+                impactful projects.</h2>
 
             <section class="about-me-info">
                 <h3>7+</h3>
@@ -284,7 +326,7 @@
 
     <!-- Footer section -->
     <div class="footer">
-        <h1>© 2025 Copyright</h1>
+        <h1>© 2025 Copyright, Jana Sandeyouni </h1>
     </div>
 
 
